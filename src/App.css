@@ -388,6 +388,7 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: 'Montserrat', sans-serif;
+  overflow-y: hidden;
 }
 
 .contact{

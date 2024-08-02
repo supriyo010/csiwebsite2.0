@@ -595,7 +595,7 @@ body {
   }
 
   .carousel-box{
-    width: 800px;
+    width: 700px;
     margin-top: -20px;
   }
   .testimonial{
@@ -609,12 +609,29 @@ body {
   .carousel-buttons.bottom-center button{
     margin-top: 1700px;
   }
+
+  .footer{
+    height: 1900px;
+  }
   .contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .social-media h1{
+    display: none;
+  }
+
+  .social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 250px;
   }
   
 }

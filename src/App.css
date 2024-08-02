@@ -102,6 +102,7 @@ body {
   color: white;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  animation: slideUp 3.5s ease-out forwards;
 }
 
 .carousel-inner button:hover{
@@ -160,18 +161,20 @@ body {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1.5px;
+  animation: slideUp 1.5s ease-out forwards;
 }
+
 .carousel h3{
   font-size: 100px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-
+  animation: slideUp 2s ease-out forwards;
 }
 .carousel h2{
   font-size: 100px;
   margin-top: -110px;
   font-family: 'Montserrat', sans-serif;
-
+  animation: slideUp 2.5s ease-out forwards;
 }
 .carousel p{
   font-size: 30px;
@@ -180,8 +183,22 @@ body {
   margin-left: 20px;
   letter-spacing: 2px;
   line-height: 70px;
-
+  animation: slideUp 3s ease-out forwards;
 }
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(1000px);
+    behavior: smooth;
+  }
+  100% {
+    opacity: 1;;
+    transform: translateY(0);
+    behavior: smooth;
+  }
+}
+
 .carousel-buttons {
   position: absolute;
   top: 50%;
@@ -256,7 +273,7 @@ body {
 }
 
 #second-carousel{
-  background: url(https://i.postimg.cc/L4BkJrFs/Whats-App-Image-2024-07-31-at-13-03-34-d3958db8-1-1-1.png);
+  background: url(./images/testimonial.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 100px;
@@ -285,7 +302,7 @@ body {
 .carousel-boxes {
   display: flex;
   justify-content: center;
-  height: 500px;
+  height: 520px;
 }
 
 .carousel-box {
@@ -311,6 +328,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   padding-top: 30px;
+  letter-spacing: 1px;
 }
 
 .carousel-buttons.bottom-center {
@@ -343,7 +361,7 @@ body {
 
 
 .testimony{
-  font-size: 15px !important;
+  font-size: 18px !important;
   font-weight: 300 !important;
   color: #333 !important;
   line-height: 25px !important;
@@ -361,6 +379,123 @@ body {
   font-size: 18px !important;
 }
 
+.footer{
+  margin-top: 100px;
+  height: 1000px;
+  overflow-x: hidden !important;
+  background: url(./images/footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact{
+  display: flex;
+  gap: 80px;
+  width: 60vw;
+  background-color: transparent;
+  margin-top: 80px;
+  padding: 50px;
+  text-align: left;
+  line-height: 55px;
+  padding: 50px;
+}
+
+.contact h1{
+  font-size: 45px;
+}
+
+.contact input{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 2px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  width: 450px;
+  padding: 20px;
+  height: 50px;
+  font-size: 18px;
+  outline: none;
+}
+
+.contact input::placeholder{
+  color: white;
+}
+
+.mailing{
+  display: flex;
+  margin-top: 20px;
+}
+.mailing .icon{
+  margin-top: 30px;
+  margin-left: -50px;
+}
+
+.social-media{
+  display: flex;
+  gap: 100px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  justify-content: center;
+  margin-top: 100px;
+}
+.social-media h1{
+  font-size: 35px;
+}
+
+.social-media h2{
+  font-size: 30px;
+}
+
+.social-media p{
+  font-size: 20px;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons .media{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  align-self: center;
+  align-items: center !important;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons .media:hover{
+  background-color: transparent;
+  color: rgb(8, 69, 209);
+}
+
+.social-icons .media .icon{
+  margin-top: 20px;
+}
+
+.copyright{
+  height: 200px;
+  width: 100%;
+  background-color: transparent;
+  border-top: 1.5px solid white;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 72px;
+  align-items: center;
+}
+
+.copyright p{
+  margin-top: 50px;
+  font-size: 20px;
+}
 
 .scroll-to-top {
   position: fixed;
@@ -470,6 +605,13 @@ body {
 
   .carousel-buttons.bottom-center button{
     margin-top: 1700px;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
 }

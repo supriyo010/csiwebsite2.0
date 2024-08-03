@@ -301,37 +301,37 @@ function App() {
         </div>
       </div>
       <div className='footer'> 
-          <center>
-            <div className='contact'> 
-              <h1>Subscribe To Our Newsletter To Get Daily Content!</h1>
-              <div className='mailing'>
+      <center>
+        <div className='contact'>
+            <h1>Subscribe To Our Newsletter To Get Daily Content!</h1>
+            <div className='mailing'>
                 <input placeholder='Enter your email'></input>
                 <IoIosMail size={45} className='icon'/>
-              </div>
             </div>
-          </center>
-          <div className='social-media'>
-              <h1>CSI BCREC</h1>
-              <div>
-                <h2>Courses</h2>
-                <p>UI/UX Design</p>
-                <p>Business Strategy</p>
-                <p>Web Development</p>
-                <p>Progamming Concepts</p>
-                <p>Software Development</p>
-              </div>
-              <div>
-                <h2>Contact</h2>
-                <p>Dr. B C Roy Engineering College, Durgapur</p>
-                <p><IoLocation size={28}/> Fuljore More, Durgapur, West Bengal, India</p>
-                <p><IoIosMail size={28}/> csiofficial@bcrec.ac.in</p>
-                <p><FaPhone />  +91-8859963680</p>
-              </div>
-              <div className='social-icons'>
-                <div className='media'><center><FaFacebook size={35} className='icon'/></center></div>
-                <div className='media'><center><FaLinkedin size={35} className='icon'/></center></div>
-                <div className='media'><center><FaYoutube size={35} className='icon'/></center></div>
-              </div>
+        </div>
+    </center>
+    <div className='social-media'>
+        <div>
+            <h1>CSI BCREC</h1>
+            <h2>Courses</h2>
+            <p>UI/UX Design</p>
+            <p>Business Strategy</p>
+            <p>Web Development</p>
+            <p>Programming Concepts</p>
+            <p>Software Development</p>
+        </div>
+        <div>
+            <h2>Contact</h2>
+            <p>Dr. B C Roy Engineering College, Durgapur</p>
+            <p><IoLocation size={28}/> Fuljore More, Durgapur, West Bengal, India</p>
+            <p><IoIosMail size={28}/> csiofficial@bcrec.ac.in</p>
+            <p><FaPhone/> +91-8859963680</p>
+        </div>
+        <div className='social-icons'>
+            <div className='media'><center><FaFacebook size={35} className='icon'/></center></div>
+            <div className='media'><center><FaLinkedin size={35} className='icon'/></center></div>
+            <div className='media'><center><FaYoutube size={35} className='icon'/></center></div>
+        </div>
           </div>
           <div className='copyright'>
             <p>@ All rights reserved 2021 by csi@bcrec.ac.in</p>

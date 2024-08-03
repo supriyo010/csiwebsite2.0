@@ -15,6 +15,9 @@ import slide1 from './images/slide1.png';
 import slide2 from './images/slide2.png';
 import slide3 from './images/slide3.png';
 import logo from './images/logo.png';
+import Team from '../src/components/Teams'
+import Teams from '../src/components/Teams';
+import Aboutus from './components/Aboutus';
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -177,7 +180,7 @@ function App() {
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#courses">Contests</a></li>
-            <li><a href="#ourteam">Our Team</a></li>
+            <li><a href="#by">Our Team</a></li>
             <li><a href="#second-carousel">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -210,7 +213,11 @@ function App() {
               </div>
             </div>
           ))}
+          
         </div>
+       
+
+       
         <div className="carousel-buttons">
           <button className="carousel-button" onClick={handlePrev}>
             <IoIosArrowBack size={30} />
@@ -219,6 +226,7 @@ function App() {
             <IoIosArrowForward size={30} />
           </button>
         </div>
+       
       </div>
       <section className="box-section">
         <div className="box">
@@ -243,6 +251,9 @@ function App() {
           </div>
         </div>
       </section>
+      <Aboutus/>
+      <Teams/>
+   
       <div className="carousel" id='second-carousel'>
         <h4>Our Testimonials</h4>
         <h3>What They Say?</h3>
@@ -300,6 +311,7 @@ function App() {
           </button>
         </div>
       </div>
+   
       <div className='footer'> 
       <center>
         <div className='contact'>
